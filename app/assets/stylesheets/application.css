@@ -13,3 +13,142 @@
  *= require_tree .
  *= require_self
  */
+ html, body {
+  height: 100%;
+  font-family: 'Raleway', sans-serif;
+  color: #2b303a;
+  background-color: #eee5e9;
+
+}
+
+h1 {
+	font-weight: 500;
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.top-page {
+	margin-top: 50px;
+	width: 100%;
+}
+/*--------------------------------*/
+
+/* changing bootstrap default styles */
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+	background-color: inherit;
+}
+
+/*---------------------------------*/
+
+
+.logo {
+	padding: 5px;
+	border: 1px solid #eee5e9;
+	border-radius: 5px;
+	color: #eee5e9;
+	background-color: #d64933;
+}
+
+/*navigation*/
+.brand { font-family: 'Michroma', sans-serif; }
+.navbar { background-color: #2b303a; }
+
+.navbar-default .navbar-nav>li>a { color: #92dce5;}
+
+.navbar-default .navbar-nav>li>a:focus, 
+.navbar-default .navbar-nav>li>a:hover { 
+  background-color: #92dce5;
+  color: #eee5e9; 
+}
+
+.navbar-default .navbar-nav>.open>a:focus,
+.navbar-default .navbar-nav>.open>a:hover {
+  background-color: #eee5e9;
+  color: #7c7c7c;
+}
+
+.dropdown-menu>li>a { 
+	background-color: #eee5e9; 
+	color: #7c7c7c;
+}
+
+.dropdown-menu>li>a:focus, 
+.dropdown-menu>li>a:hover {
+  background-color: #ffb2b2;
+  color: #ff005a;
+}
+
+/* Wrapper for page content to push down footer */
+#wrap {
+  min-height: 100%;
+  height: auto;
+  /* Negative indent footer by its height */
+  margin: 0 auto -60px;
+  /* Pad bottom by footer height */
+  padding: 0 0 60px;
+}
+
+
+/*page structure: main blocks*/
+.container-page { 
+	margin: 0; 
+	padding-left: 20px; 
+	padding-right: 20px;
+}
+#left-sidebar { margin-top: 10px; }
+
+#central-content { margin-top: 50px; }
+
+#networking {
+	width: 100%;
+	height: 50px;
+	font-size: 2em;
+}
+#right-sidebar { 
+	margin-top: 50px;
+	padding-top: 10px;
+	padding-right: 25px;
+
+}
+
+.article-search { 
+
+	background-color: #7c7c7c;
+	color: #eee5e9; 
+}
+.article-search .nav-header { 
+	font-size: 1.4em;
+	font-weight: 700;
+	text-align: center;
+}
+
+.article-search a {
+	color: #92dce5;
+	font-size: 1.3em;
+	font-weight: 500;
+}
+
+.article-search a:focus,
+.article-search a:hover {
+	color: #eee5e9;
+
+}
+
+
+/*footer
+/* Set the fixed height of the footer here */
+footer { 
+	height: 60px;
+	background-color: #d64933; 
+}
+
+.copyright { 
+	color: #eee5e9;
+  padding-top: 20px;
+  }  
+
