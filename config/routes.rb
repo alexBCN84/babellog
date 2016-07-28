@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :drafts
   get 'static_pages/about'
 
   root 'static_pages#index'

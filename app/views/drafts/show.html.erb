@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @draft.title %>
+</p>
+
+<p>
+  <strong>Body:</strong>
+  <%= @draft.body %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @draft.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_draft_path(@draft) %> |
+<%= link_to 'Back', drafts_path %>
