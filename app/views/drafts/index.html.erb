@@ -1,31 +1,47 @@
-<p id="notice"><%= notice %></p>
+<div id="drafts" class="container-page">
+  <p id="notice"><%= notice %></p>
+  <div class="row">
+    <div id="left-sidebar" class="col-md-4">
+      <h3 class="center">See drafts in other languages</h3>
+      <div class="sidebar-nav-fixed">         
+        <div class="well">
+          <h4><i class="fa fa-comments-o"></i>  ...  become fluent in your second language by expressing yourself.</h4>
+        </div>
+        <!--/.well -->
+        <div class="well">
+          <h4><i class="fa fa-leanpub"></i>  ...  learn from feedback by native and fluent speakers.</h4>
+        </div>
+        <!--/.well -->
+        <div class="well">
+          <h4><i class="fa fa-question-circle-o"></i>  ...  help other learners to become fluent in your native or dominant language.</h4>
+        </div>
+        <!--/.well -->
+        <div class="well">
+          <h4><i class="fa fa-bullhorn"></i>  ...  react to posts and follow people wishing to freely express themselves just like they would do on facebook or twitter.</h4>
+        </div>
+        <!--/.well -->
+      </div>
+      <!--/.sidebar nav fixed -->
+    </div>
+    <!--/#left sidebar -->
+    <div id="main-content" class="col-md-8">
+      <h1>Drafts</h1>
+      <article>
+        <% @drafts.each do |draft| %>
+          <%= image_tag(draft.image_url, class: "img-responsive") %>
+          
+          <h2><%= draft.title %></h2>
+          <p><%= draft.body %></p>
+          
 
-<h1>Drafts</h1>
-
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Body</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @drafts.each do |draft| %>
-      <tr>
-        <td><%= draft.title %></td>
-        <td><%= draft.body %></td>
-        <td><%= draft.image_url %></td>
-        <td><%= link_to 'Show', draft %></td>
-        <td><%= link_to 'Edit', edit_draft_path(draft) %></td>
-        <td><%= link_to 'Destroy', draft, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
-
-<%= link_to 'New Draft', new_draft_path %>
+          <span><%= link_to 'Show', draft %> | <%= link_to 'Edit', edit_draft_path(draft) %> | <%= link_to 'Destroy', draft, method: :delete, data: { confirm: 'Are you sure?' } %>
+        </span>
+      <% end %>
+     </article>
+    <%= link_to 'New Draft', new_draft_path %>
+    </div>
+    <!--/#main-content -->
+  </div>
+  <!--/.row -->
+</div>
+<!--/#drafts -->

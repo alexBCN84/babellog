@@ -86,9 +86,12 @@ h1 {
 	padding-left: 20px; 
 	padding-right: 20px;
 }
-#left-sidebar { margin-top: 10px; }
+#left-sidebar { 
+	margin-top: 10px; 
+}
 
-#central-content { margin-top: 50px; }
+#central-content { 
+	margin-top: 50px; }
 
 #networking {
 	width: 100%;
