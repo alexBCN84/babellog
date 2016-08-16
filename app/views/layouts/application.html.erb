@@ -32,7 +32,6 @@
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <!--/turbolinks -->
   </head>
-
   <body>
     <div id="wrap">
       <!-- ==================== -->
@@ -89,12 +88,12 @@
       <!-- alerts and notices -->
 
       <!--/.alerts and notices -->
-      <div clas="container">
+      <div id="main-container-site" class="container">
         <div class="row">
           <div id="central-content" class="col-md-10">
             <%= yield %>
           </div>
-          <!--/#central content -->
+          <!--/#central-content -->
           <div id="right-sidebar" class="col-md-2">
             <div class="sidebar-nav-fixed">
               <div id="networking" class="center">
@@ -104,7 +103,8 @@
                 <a href="#"><i class="fa fa-linkedin-square"></i></a>
                 <a href="#"><i class="fa fa-tumblr-square"></i></a>
                 <a href="#"><i class="fa fa-delicious"></i></a>
-              </div>            
+              </div>
+              <!--/#networking -->
               <div class="well article-search">
                 <ul class="nav">
                   <li class="nav-header">Search Articles</li>
@@ -115,16 +115,17 @@
                   <li><a href="#" class="btn btn-default">Search</a></li>
                 </ul> 
               </div>
-              <!--/.well -->
+              <!--/.well article-search -->
             </div>
-            <!--/. sidebar nav fixed -->
+            <!--/.sidebar-nav-fixed -->
           </div>
-          <!--/#right sidebar -->
+          <!--#right-sidebar -->
         </div>
+        <!--/.row -->
       </div>
-          
+      <!--/.container -->
     </div>
-    <!--/#wrap-->
+    <!--/#wrap -->
     <footer>
       <div class="container copyright">
         &copy; 2016 Babellog
